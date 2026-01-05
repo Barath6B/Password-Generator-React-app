@@ -1,10 +1,12 @@
 import './Header.css';
+import logo from "../assets/logo-B6.png";
+
 
 function Navbar( {onTopClick}) {
   return (
     <div className="navbar">
       <div className="nav-left">
-        <img className="nav-logo" src="/src/assets/logo-B6.png" onClick={onTopClick} />
+        <img className="nav-logo" src={logo} alt="B6 Logo" onClick={onTopClick} />
       </div>
       <div className="nav-centre">
         {/* <a href="/" className="nav-link">HOME</a>
