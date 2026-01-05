@@ -1,0 +1,134 @@
+/* *,
+*::before,
+*::after {
+  box-sizing: border-box;
+} */
+* {
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.navbar {
+    position: fixed;
+    top:0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 70px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 0 40px;
+    z-index: 10;
+    box-sizing: border-box;
+
+    background: rgba(0,0,0,0.3);
+    backdrop-filter: blur(10px);
+}
+
+.nav-logo {
+    height: 90px;
+    width: 90px;
+}
+
+.page-content,
+.centre-container,
+.navbar {
+  position: relative;
+  z-index: 2;
+}
+
+
+.nav-logo {
+  cursor: pointer;
+  font-size: 20px;
+  color: white;
+}
+
+.nav-left {
+    display: flex;
+    align-items: center;
+}
+
+.nav-centre {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 30px;
+}
+
+.nav-right {
+    margin-left: auto;
+    display: flex;
+    align-items: center;
+}
+
+.nav-link {
+    color: white;
+    text-decoration: none;
+    padding: 8px 15px;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: 500;
+    transition: background-color 0.25s ease;
+}
+
+.nav-link:hover {
+  background: rgba(255, 255, 255, 0.12);
+  box-shadow: 0 0 10px rgba(138, 93, 255, 0.4);
+  font-weight: bold;
+}
+
+
+/* .nav-btn {
+  padding: 8px 16px;
+  border-radius: 6px;
+  border: none;
+  background-color: rgb(46, 102, 206);
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.25s ease;
+}
+
+.nav-btn:hover {
+  background: rgba(0, 198, 255, 0.3);
+  box-shadow: 0 0 16px rgba(0, 198, 255, 0.5);
+  font-weight: bold;
+} */
+
+.social-icons {
+  position: absolute;
+  top: 20px;
+  right: 24px;
+
+  display: flex;
+  gap: 16px;
+  z-index: 5;
+}
+
+.social-icons a {
+  width: 42px;
+  height: 42px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.08);
+  color: #ffffff;
+
+  font-size: 18px;
+  text-decoration: none;
+
+  transition: all 0.3s ease;
+}
+
+.social-icons a:hover {
+  background: linear-gradient(135deg, #7c3aed, #4f46e5);
+  transform: translateY(-2px);
+}
+
+

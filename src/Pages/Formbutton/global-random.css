@@ -1,0 +1,205 @@
+.row {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+}
+
+.row span{
+    font-size: 14px;
+    color: #333;
+    max-width: 70px;
+}
+
+input[type="range"] {
+    flex: 1;
+    cursor: pointer;
+}
+
+.count-box {
+    padding: 4px 12px;
+    border: 1px solid#ddd;
+    border-radius: 8px;
+    font-size: 14px;
+}
+
+.checkbox-row {
+  display: flex;
+  gap: 40px;
+  align-items: center;
+}
+
+
+.checkbox-item {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+
+  font-size: 14px;
+  color: #333;
+  cursor: pointer;
+  position: relative;
+}
+
+
+.checkbox-item input {
+  display: none;
+}
+
+
+.checkmark {
+  width: 18px;
+  height: 18px;
+
+  border: 2px solid #bbb;
+  border-radius: 5px;
+
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  transition: all 0.2s ease;
+}
+
+
+.checkbox-item input:checked + .checkmark {
+  background: #0b5ed7;
+  border-color: #0b5ed7;
+}
+
+
+.checkbox-item input:checked + .checkmark::after {
+  content: "✓";
+  color: white;
+  font-size: 12px;
+  font-weight: bold;
+}
+
+.form-title.low-text{
+    margin-bottom: 6px
+}
+
+.password-section {
+  display: flex;
+  flex-direction: column;
+  gap: 6px; 
+}
+
+.password-strength {
+  margin: 4px 0 8px;  
+  font-size: 14px;
+  font-weight: 600;
+  color: green;
+  margin-top: 0;
+}
+
+
+.password-output {
+    width: 460px;
+    padding: 14px;
+
+    font-size: 16px;
+    font-weight: 600;
+    text-align: center;
+
+    border-radius: 8px;
+    border-radius: 8px;
+    outline: none;
+}
+
+.btn-row {
+    display: flex;
+    gap: 14px;
+}
+
+.primary-btn {
+  flex: 1;
+  padding: 12px;
+
+  background: #0b5ed7;
+  color: white;
+
+  border: none;
+  border-radius: 8px;
+
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.primary-btn:hover {
+    background: rgb(79, 79, 216);
+}
+.secondary-btn {
+  flex: 1;
+  padding: 12px;
+
+  background: transparent;
+  color: #0b5ed7;
+
+  border: 1px solid #0b5ed7;
+  border-radius: 8px;
+
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.secondary-btn:hover {
+  background: rgba(11, 94, 215, 0.08);
+}
+
+
+/* ---------- RESPONSIVE ---------- */
+@media (max-width: 900px) {
+  .form-container {
+    flex-direction: column;
+    gap: 40px;
+    padding: 40px 20px;
+  }
+
+  .left-container {
+    text-align: center;
+  }
+}
+
+/* ---------- USER VALUE BOX ---------- */
+.user-value-box {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+
+  margin-top: 6px;
+}
+
+/* Label */
+.user-value-box span {
+  font-size: 14px;
+  font-weight: 600;
+  color: #111;
+}
+
+/* Input field */
+.user-text-box {
+  width: 450px;
+  padding: 12px 14px;
+
+  font-size: 15px;
+  font-weight: 500;
+
+  border-radius: 10px;
+  border: 1px solid #ddd;
+  outline: none;
+
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+/* Focus state */
+.user-text-box:focus {
+  border-color: #0b5ed7;
+  box-shadow: 0 0 0 3px rgba(11, 94, 215, 0.15);
+}
+
+/* Placeholder (if you add one later) */
+.user-text-box::placeholder {
+  color: #999;
+}
